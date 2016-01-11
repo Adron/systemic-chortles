@@ -1,2 +1,9 @@
-language: fsharp
-solution: systemic-chortles.sln
+language: csharp
+
+sudo: false  # use the new container-based Travis infrastructure 
+
+script: 
+  - xbuild systemic-chortles.sln
+
+notifications:
+  slack: thrashingcode:APaL8WuJBKSYjkZYCeOLAAqq
